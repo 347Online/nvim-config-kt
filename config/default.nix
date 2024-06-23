@@ -18,7 +18,10 @@
 
   plugins = {
     telescope.enable = true;
-    treesitter.enable = true;
+    treesitter = {
+      enable = true;
+      indent = true;
+    };
     luasnip.enable = true;
     lualine.enable = true;
     comment.enable = true;
@@ -64,7 +67,7 @@
         };
       };
 
-      closeIfLastWindow = false;
+      closeIfLastWindow = true;
       window = {
         width = 30;
         autoExpandWidth = false;
