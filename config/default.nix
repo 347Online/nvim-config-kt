@@ -63,6 +63,9 @@
           visible = true;
           hideDotfiles = false;
           hideGitignored = true;
+          neverShow = [
+            ".git"
+          ];
         };
       };
 
