@@ -36,7 +36,7 @@
     luasnip.enable = true;
     lualine.enable = true;
     comment.enable = true;
-    "indent-blankline".enable = true;
+    indent-blankline.enable = true;
     nix.enable = true;
 
     gitsigns = {
