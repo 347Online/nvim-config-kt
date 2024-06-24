@@ -1,7 +1,17 @@
-{
+{pkgs, ...}: {
   imports = [
     ./bufferline.nix
   ];
+
+  extraPlugins = with pkgs.vimPlugins; [
+    delimitMate
+  ];
+
+  extraConfigVim = ''
+    let delimitMate_expand_cr = 1
+    let delimitMate_expand_inside_quotes = 1
+    let delimitMate_autoclose = 0
+  '';
 
   opts = {
     wrap = false;
