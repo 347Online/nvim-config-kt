@@ -9,6 +9,7 @@
     relativenumber = true;
     shiftwidth = 2;
     expandtab = true;
+    autoindent = true;
   };
 
   colorschemes.tokyonight = {
@@ -20,11 +21,13 @@
     telescope.enable = true;
     treesitter = {
       enable = true;
-      indent = true;
+      # indent = true;
     };
     luasnip.enable = true;
     lualine.enable = true;
     comment.enable = true;
+    "indent-blankline".enable = true;
+    nix.enable = true;
 
     gitsigns = {
       enable = true;
@@ -69,6 +72,10 @@
         };
       };
 
+      enableDiagnostics = true;
+      enableGitStatus = true;
+      enableModifiedMarkers = true;
+      enableRefreshOnWrite = true;
       closeIfLastWindow = true;
       window = {
         width = 30;
